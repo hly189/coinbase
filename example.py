@@ -1,12 +1,8 @@
 #! /usr/local/bin/python
-
+import sys
 from coinbase.wallet.client import Client
 
-api_key = 'IeiDytms6KdJ2joh'
-api_secrect = 'Zi9V990bQzm7wZrgSiUbhcHEmQ3YptMJ'
-base_url = 'https://api.coinbase.com/v2/'
+API_KEY = sys.argv[1]
+API_SECRECT = sys.argv[2] 
 
-client = Client(api_key, api_secrect)
-
-user = client.get_current_user()
-
+print "This is API_KEY:",API_KEY," and this is API_SECRECT:", API_SECRECT 
